@@ -10,11 +10,12 @@ AZURE_ENDPOINT = os.getenv("AZURE_ENDPOINT", "https://<你的-resource>.openai.a
 AZURE_API_KEY = os.getenv("AZURE_API_KEY")
 
 MODEL_OPTIONS = [
-    "gpt-4o",
-    "Phi-4-reasoning",
-    "DeepSeek-V3",
-    # 在这里添加你实际的 deployment 名称
+    "gpt-5.4-pro",           # 推荐主力模型，综合能力强
+    "DeepSeek-V4-Pro",       # 推理能力很强，适合复杂问题
+    "DeepSeek-V4-Flash",     # 速度快、成本低，适合简单任务
+    "gpt-image-2"            # 支持图片理解（vision 模型）
 ]
+
 
 @st.cache_resource
 def get_client():
