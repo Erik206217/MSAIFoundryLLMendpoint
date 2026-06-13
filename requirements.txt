@@ -1,4 +1,6 @@
 streamlit
 openai
 azure-identity
+azure-cosmos
 pypdf
+requests
